@@ -92,7 +92,7 @@ public class ImageUtil {
            else if(source.getName().endsWith(".html") || source.getName().endsWith(".jsp") || source.getName().endsWith(".php") || source.getName().endsWith(".vm") || source.getName().endsWith(".htm"))
                compressHtmlFiles(source.getAbsolutePath(),optFile+File.separator+source.getName());
            else if(source.getName().endsWith(".js"))
-               compressFilesWithClosureNative(source.getAbsolutePath(),optFile+File.separator+source.getName());
+               compressFilesWithYUINative(source.getAbsolutePath(),optFile+File.separator+source.getName());
            else if(source.getName().endsWith(".css"))
                compressFilesWithYUINative(source.getAbsolutePath(),optFile+File.separator+source.getName());
        }
